@@ -3,7 +3,10 @@ import React from "react";
 
 const HomePage = () => {
     return (
-        <div>HomePage</div>
+        <div>
+            <div>HomePage</div>
+            <h1>這是首頁</h1>
+        </div>
     );
 };
 
