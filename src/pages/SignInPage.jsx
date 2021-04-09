@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = () => {
+const SignInPage = () => {
     return (
         <div>
             <div
@@ -8,13 +8,13 @@ const Footer = () => {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    height: "10vh",
+                    height: "90vh",
                 }}
             >
-                <h1>Footer</h1>
+                <h1>SignInPage</h1>
             </div>
         </div>
     );
 };
 
-export default Footer;
+export default SignInPage;
