@@ -11,7 +11,10 @@ const Navbar = () => {
     return (
         <StyledBar>
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">LOGO</h1>
+                <Link className="Link" to="/">
+                    <h1 className="navbar-logo">LOGO</h1>
+                </Link>
+
                 <div className="menu-icon" onClick={showSidebar}>
                     <i className={sidebar ? "fas fa-times" : "fas fa-bars"}></i>
                 </div>
@@ -38,12 +41,11 @@ const Navbar = () => {
 
 const StyledBar = styled.div`
     .NavbarItems {
-        background: linear-gradient(
-            90deg,
-            rgb(110, 94, 254) 0%,
-            rgba(73, 63, 252, 100%)
-        );
+        background: linear-gradient(90deg, #3641a5, #161623);
         height: 80px;
+        width: 100%;
+        position: fixed;
+        z-index: 2;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -86,6 +88,8 @@ const StyledBar = styled.div`
     @media screen and (max-width: 960px) {
         .NavbarItems {
             position: relative;
+            position: fixed;
+            z-index: 2;
         }
         .nav-menu {
             display: flex;
@@ -103,7 +107,7 @@ const StyledBar = styled.div`
             left: 0;
             opacity: 1;
             transition: all 0.5s ease;
-            z-index: 1;
+            z-index: 2;
         }
         .nav-links {
             text-align: center;

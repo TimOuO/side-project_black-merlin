@@ -18,8 +18,8 @@ export const MenuItems = [
         cName:'nav-links'
     },
     {
-        title:'Services',
-        path:'/services',
+        title:'Music',
+        path:'/music',
         icon:<GrIcons.GrServices/>,
         cName:'nav-links'
     },
